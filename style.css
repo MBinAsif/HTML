@@ -1,0 +1,108 @@
+.carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+#carousel1 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  #carousel-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .card-body {
+    padding: 20px;
+  }
+  
+  .card .card-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .card .card-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .card .btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px;
+  }
+  
+  .divmain {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .divin {
+    height: 20%;
+  }
+
+  body {
+    background-color: #0A1828;
+    color: #178582;
+  }
+  .navbar {
+    background-color: #BFA181 !important;
+    width: 96%;
+    margin-left: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+  }
+
+  h2 {
+    color: #BFA181;
+  }
+
+  .nbtn {
+    border-color: #178582 !important;
+  }
+
+  .btn-custom {
+    width: 150px;
+    height: 40px;
+    border-color: #BFA181;
+    color: #178582;
+  }
+  .btn-custom:hover {
+    background-color: #0A1828;
+    color: #fff;
+  }
+
+  .my-height-class {
+    height: 500px !important;
+  }

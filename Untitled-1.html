@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accountolegal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+    .form-container {
+  float: left;
+  width: 50%; /* adjust this value to fit your layout */
+}
+    #LeftSBS {
+    padding-left:70px;
+    }
+    #RightSBS {
+    padding-right:70px;
+    }
+    
+    .Readyfont{ font-size: 140.0px; letter-spacing: -15px;}
+    
+    @media only screen and (min-width: 1280px){
+    .grid-container.grid-container>.cmp-grid-container>.cmp-grid-container__items>.aem-Grid>.aem-GridColumn.section:not(.section-tile)>.cmp-section>.cmp-section__container {
+        padding-left: 105px;
+        padding-right: 15px;
+    }
+    
+  /* Tablet devices (1024px and down) */
+    @media only screen and (max-width: 1024px) {
+    #LeftSBS {
+    padding-left:30px;
+    }
+    
+    .Readyfont{ font-size: 80px; letter-spacing: -4px;}
+    }
+    
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 479px) {
+    #LeftSBS {
+    padding-left:1px;
+    }
+    .Readyfont{ font-size: 80px; letter-spacing: -4px;}
+    }  
+
+    </style>
+        
+        <style>
+    .cmp-column-slider__headlines{
+       width:75%!important;
+        
+    }
+    
+    .cmp-column-slider__headlines h1 {
+        font-weight: 800!important;
+    }
+    
+    @media only screen and (max-width: 1280px) {
+    .cmp-column-slider__headlines{
+       width:75%!important;
+    }}
+    
+    @media only screen and (max-width: 1212px) {
+    .cmp-column-slider__headlines{
+       width:80%!important;
+    }}
+    
+    @media only screen and (max-width: 1100px) {
+    .cmp-column-slider__headlines{
+       width:90%!important;
+    }}
+    
+    @media only screen and (max-width: 800px) {
+    .cmp-column-slider__headlines{
+       width:90%!important;
+    }}
+    
+    @media only screen and (max-width: 785px) {
+    .cmp-column-slider__headlines{
+       width:90%!important;
+    }}
+    
+    @media only screen and (max-width: 770px) {
+    .cmp-column-slider__headlines{
+       width:90%!important;
+    }}
+    
+    @media only screen and (max-width: 768px) {
+    .cmp-column-slider__headlines{
+       width:90%!important;
+    }}
+    
+    @media only screen and (max-width: 664px) {
+    .cmp-column-slider__headlines{
+       width:95%!important;
+    }}
+    @media only screen and (max-width: 624px) {
+    .cmp-column-slider__headlines{
+       width:95%!important;
+    }}
+    
+    @media only screen and (max-width: 589px) {
+    .cmp-column-slider__headlines{
+       width:95%!important;
+    }}
+    
+    @media only screen and (max-width: 550px) {
+    .cmp-column-slider__headlines{
+     width:95%!important;
+    }}
+    
+    @media only screen and (max-width: 504px) {
+    .cmp-column-slider__headlines{
+       width:100%!important;
+    }}
+    
+    @media only screen and (max-width: 500px) {
+    .cmp-column-slider__headlines{
+       width:100% !important;
+    }
+    .cmp-column-slider__headlines h1 {
+       font-size: 3.2rem;
+       line-height: 50px !important;
+    }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .cmp-column-slider__headlines{
+       width:100% !important;
+    }
+    
+    .cmp-column-slider__headlines h1.topHeadline{
+    margin-top: 46px;
+    }
+    }
+    
+    @media only screen and (max-width: 420px) {    
+    .cmp-column-slider__headlines{
+       width:100% !important;
+    }
+    }
+    
+    @media only screen and (max-width: 403px) {
+    .cmp-column-slider__headlines{
+      width:100% !important;
+    }}
+    
+    @media only screen and (max-width: 390px) {
+    .cmp-column-slider__headlines{
+       width:100%! important;
+    }}
+    
+    @media only screen and (max-width: 375px) {
+    .cmp-column-slider__headlines{
+       width:100%!important;
+    }
+    .cmp-column-slider__headlines h1{
+       font-size: 2.8rem;
+    }
+    }
+    
+    @media only screen and (min-width: 1281px) {
+    .cmp-column-slider__headlines{
+       width:75%!important;
+       
+    }}
+    
+    </style>
+</head>
+
+<body>
+   <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="">Carousel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+         <a class="nav-link" href="#">Industries</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">Insights</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">Careers</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">Offices</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">People</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<div class="divmain">
+  <div class="row">
+    <div class="col position-relative">
+      <div class="carousel slide" id="carouselExampleControls">
+        <ul class="carousel-indicators">
+          <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://picsum.photos/800/400?random=1" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="row">
+                <div class="col-2 offset-1">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=1')">
+                    <h5>Div 1</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=2')">
+                    <h5>Div 2</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=3')">
+                    <h5>Div 3</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=4')">
+                    <h5>Div 4</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=5')">
+                    <h5>Div 5</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://picsum.photos/800/400?random=2" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="row">
+                <div class="col-2 offset-1">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=6')">
+                    <h5>Div 1</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=7')">
+                    <h5>Div 2</h5>
+                    <div class="carousel-item">
+                     <img class="d-block w-100" src="https://picsum.photos/800/400?random=3" alt="Third slide">
+                     <div class="carousel-caption d-none d-md-block">
+                           <div class="row">
+                              <div class="col-2 offset-1">
+                                 <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=1')">
+                                 <h5>Div 1</h5>
+                                 <p>Some text here.</p>
+                              </div>
+                           </div>
+                        <div class="col-2">
+                           <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=2')">
+                              <h5>Div 2</h5>
+                              <p>Some text here.</p>
+                           </div>
+                        </div>
+                     <div class="col-2">
+                           <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=3')">
+                              <h5>Div 3</h5>
+                              <p>Some text here.</p>
+                           </div>
+                     </div>
+                     <div class="col-2">
+                        <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=4')">
+                           <h5>Div 4</h5>
+                           <p>Some text here.</p>
+                        </div>
+                     </div>
+                     <div class="col-2">
+                        <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=5')">
+                           <h5>Div 5</h5>
+                           <p>Some text here.</p>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://picsum.photos/800/400?random=2" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="row">
+                <div class="col-2 offset-1">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=1')">
+                    <h5>Div 1</h5>
+                    <p>Some text here.</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=2')">
+                     Copy code
+                <h5>Div 2</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=3')">
+                <h5>Div 3</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=4')">
+                <h5>Div 4</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=5')">
+                <h5>Div 5</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://picsum.photos/800/400?random=3" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="row">
+            <div class="col-2 offset-1">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=1')">
+                <h5>Div 1</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=2')">
+                <h5>Div 2</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=3')">
+                <h5>Div 3</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=4')">
+                <h5>Div 4</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="inner-div" onmouseover="changeImage('https://picsum.photos/800/400?random=5')">
+                <h5>Div 5</h5>
+                <p>Some text here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+<script>
+
+function changeImage(src) {
+  document.querySelector('.carousel-item.active img').src = src;
+}
+</script>
+
+</body>
+</html>
